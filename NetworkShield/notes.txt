@@ -1,0 +1,9 @@
+Configuration settings required:
+
+#pragma config FETHIO=ON
+#pragma config FMIIEN=OFF
+
+PHY reset pin: INT2/RE9 (Digital 7)
+
+EEPROM is on I2C bus 1, device ID is 0x50
+
