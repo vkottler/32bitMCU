@@ -1,0 +1,11 @@
+Dependencies for Project 'vaughns', Target 'nucleo144': (DO NOT MODIFY !)
+F (.\main.c)(0x590FE2C4)(--c99 -c --cpu Cortex-M7.fp.dp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_nucleo144-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F767xx-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (RTE\Device\STM32F767ZITx\startup_stm32f767xx.s)(0x590FCB9D)(--cpu Cortex-M7.fp.dp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_nucleo144-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include--pd "__UVISION_VERSION SETA 523" --pd "_RTE_ SETA 1" --pd "STM32F767xx SETA 1"--list .\listings\startup_stm32f767xx.lst --xref -o .\objects\startup_stm32f767xx.o --depend .\objects\startup_stm32f767xx.d)
+F (RTE\Device\STM32F767ZITx\system_stm32f7xx.c)(0x590FCB1E)(--c99 -c --cpu Cortex-M7.fp.dp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_nucleo144-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F767xx-o .\objects\system_stm32f7xx.o --omf_browse .\objects\system_stm32f7xx.crf --depend .\objects\system_stm32f7xx.d)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h)(0x5906860F)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f767xx.h)(0x5866F1AE)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\core_cm7.h)(0x5899005A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F6BD88)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_compiler.h)(0x5899005A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_armcc.h)(0x5899005A)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\system_stm32f7xx.h)(0x5866F1AE)
