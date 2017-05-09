@@ -1,8 +1,0 @@
---cpu Cortex-M7.fp.dp
-".\objects\main.o"
-".\objects\startup_stm32f767xx.o"
-".\objects\system_stm32f7xx.o"
---strict --scatter ".\Objects\vaughns.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
---info sizes --info totals --info unused --info veneers
---list ".\Listings\vaughns.map" -o .\Objects\vaughns.axf
