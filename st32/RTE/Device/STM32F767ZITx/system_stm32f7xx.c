@@ -73,6 +73,18 @@ void SystemInit(void) {
 #else
 	SCB->VTOR = FLASH_BASE | VECT_TAB_OFFSET;		/* Vector Table Relocation in Internal FLASH */
 #endif
+	
+	/* Disables the MPU */
+	__DMB();									/* Make sure outstanding transfers are done */
+	SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;	/* Disable fault exceptions */
+	MPU->CTRL = 0;								/* Disable the MPU and clear the control register*/
+	
+	/* Enable Caches */
+	SCB_EnableICache();	/* Enable I-Cache */
+	SCB_EnableDCache();	/* Enable D-Cache */
+	
+	/* Enable the FLASH Adaptive Real-Time memory accelerator. */
+	SET_BIT(FLASH->ACR, FLASH_ACR_ARTEN);
 }
 
 /**
@@ -149,8 +161,6 @@ void SystemCoreClockUpdate(void) {
 	}
 	
 	/* Compute HCLK frequency --------------------------------------------------*/
-	/* Get HCLK prescaler */
-	tmp = AHBPrescTable[((RCC->CFGR & RCC_CFGR_HPRE) >> 4)];
-	/* HCLK frequency */
-	SystemCoreClock >>= tmp;
+	tmp = AHBPrescTable[((RCC->CFGR & RCC_CFGR_HPRE) >> 4)];	/* Get HCLK prescaler */
+	SystemCoreClock >>= tmp;									/* HCLK frequency */
 }
