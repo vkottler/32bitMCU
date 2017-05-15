@@ -80,11 +80,11 @@ void SystemInit(void) {
 	MPU->CTRL = 0;								/* Disable the MPU and clear the control register*/
 	
 	/* Enable Caches */
-	SCB_EnableICache();	/* Enable I-Cache */
-	SCB_EnableDCache();	/* Enable D-Cache */
+	//SCB_EnableICache();	/* Enable I-Cache */
+	//SCB_EnableDCache();	/* Enable D-Cache */
 	
 	/* Enable the FLASH Adaptive Real-Time memory accelerator. */
-	SET_BIT(FLASH->ACR, FLASH_ACR_ARTEN);
+	//SET_BIT(FLASH->ACR, FLASH_ACR_ARTEN);
 }
 
 /**
